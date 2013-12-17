@@ -20,7 +20,7 @@
 	<body>
 		<div class="left-panel">
 			<ul class="links">
-				{internal_link href="index" title="Home"}
+				{internal_link href="" title="Home"}
 				{internal_link href="aboutme" title="About"}
 				{internal_link href="work" title="Work"}
 				{internal_link href="projects" title="Projects"}

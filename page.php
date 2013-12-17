@@ -14,7 +14,7 @@ define('BASEDIR', dirname(__FILE__) . '/');
 
 $uri = substr($_SERVER['REQUEST_URI'], strlen(BASEURL));
 
-if ( $uri === '' )
+if ( empty($uri) )
 	$uri = 'index';
 
 // FIXME make sure this is not exploitable
