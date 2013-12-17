@@ -1,7 +1,21 @@
 My personal website, 2014 edition.
 ==================================
 
-This is, perhaps, the simplest CMS-like thing I could come up with. It took about 45 minutes, including learning how to use Composer (which is the main reason I did it). Consider it public domain because it's such a hilariously tiny amount of code I'm pretty sure even the BSD license is longer.
+This is, perhaps, the simplest CMS-like thing I could come up with. It took about 45 minutes, including learning how to use Composer (which is the main reason I did this project - to learn Composer). Consider it public domain because it's such a hilariously tiny amount of code I'm pretty sure even the BSD license is longer.
+
+## Setting up ##
+
+Should be a simple `composer update` to install the dependencies.
+
+Make sure `AllowOverride All` is set in your Apache configuration so that the FallbackResource directive works. FallbackResource was added sometime in either 2.2 or 2.4; write a few mod\_rewrite rules if you need to run it under another Apache version. You must have some form of URL rewriting in place, using a ?page\_name= scheme is ugly and will not work.
+
+Finally, create the Smarty template cache directory:
+
+```shell
+cd /path/to/fuhry.com
+mkdir cache
+chmod 777 cache
+```
 
 ## Known bugs ##
 
