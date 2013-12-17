@@ -1,0 +1,328 @@
+/*
+ * vim: ft=css
+ * jedit: :mode=css:
+ */
+
+body {
+  font-family: impact, helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-color: #101010;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 12px 0 0;
+  height: 100%;
+}
+
+div.left-panel {
+	position: fixed;
+	background-image: url(./left-logo.png?2012.11.01);
+	background-repeat: no-repeat;
+	background-position: 13px 23px;
+	padding: 230px 13px 13px 13px;
+	width: 269px;
+	background-color: #252525;
+	border-right: 3px solid #666666;
+	height: 100%;
+}
+
+	div.left-panel ul.links {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		float: right;
+		width: 70px;
+	}
+	
+	div.left-panel ul.links li a {
+		font-family: tahoma;
+		font-size: 8pt;
+		text-decoration: none;
+		display: block;
+		padding: 4px 0 4px 13px;
+	}
+	
+	div.left-panel ul.links li a:hover {
+		border-right: 3px solid #ccc;
+		color: #ccc;
+		padding-left: 0;
+		padding-right: 13px;
+		position: relative;
+		left: 16px;
+	}
+	
+	div.left-panel ul.links li.ext a:hover {
+		border-color: #5ca4ff;
+		color: #5ca4ff;
+	}
+	
+	div.left-panel ul.links li.youarehere a {
+		border-right: 3px solid #ffcd00;
+		color: #ffcd00;
+		padding-left: 0;
+		padding-right: 13px;
+		position: relative;
+		left: 16px;
+	}
+	
+	div.left-panel ul.links li.ext {
+		background-image: url(./external-glyph.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+	}
+	
+	div.left-panel div.copyright {
+		position: fixed;
+		left: 13px;
+		bottom: 13px;
+		font-family: tahoma, arial, helvetica, sans-serif;
+		font-size: 8pt;
+		color: #777;
+	}
+
+a:link, a:visited {
+  color: #777;
+  text-decoration: underline;
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #777;
+}
+
+address, div.text.footer {
+  color: #999;
+  width: 650px;
+  margin: 80px auto 10px auto;
+  font-style: normal;
+}
+
+address.wp-copyright {
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+
+div.body {
+	margin-left: 320px;
+	padding-top: 30px;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 32pt;
+}
+
+p, div.body ul {
+	font-family: dejavu sans mono, monaco, lucida console, monospace;
+	font-size: 12pt;
+	line-height: 160%;
+	color: #aaa;
+}
+
+div.twat {
+	border-top: 1px solid #444;
+}
+	
+	div.twat h3 {
+		color: #ccc;
+	}
+	
+	div.twat h3 a:link, div.twat h3 a:visited {
+		color: #eee;
+		text-decoration: none;
+		
+	}
+	
+	div.twat a.timestamp {
+		font-size: small;
+		text-decoration: none;
+	}
+
+		div.twat a.timestamp:hover {
+			text-decoration: underline;
+		}
+
+	div.twat div.cred {
+		font-family: tahoma, arial, helvetica, sans-serif;
+		color: #333;
+		font-size: 8pt;
+		float: right;
+		padding-top: 1em;
+	}
+	
+	div.twat div.cred a:link {
+		color: #444;
+	}
+
+/* blog styles */
+body.blog {
+	background-color: #181818;
+	background-image: url(/res/blogimg/bg.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	margin: 0;
+	padding: 0;
+}
+body.blog p, body.blog ul {
+	font-family: verdana, sans-serif;
+	font-size: 9pt;
+}
+div.breadcrumbs {
+	padding: 13px 0;
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	color: #aaa;
+}
+div.breadcrumbs a {
+	color: white;
+	text-decoration: none;
+	
+}
+div.breadcrumbs a:hover {
+	text-decoration: underline;
+}
+div.breadcrumbs div.breadlinks {
+	float: right;
+}
+div.breadcrumbs div.breadlinks ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+div.breadcrumbs div.breadlinks ul li {
+	float: left;
+}
+div.breadcrumbs div.breadlinks ul li:before {
+	content: '|';
+	color: #666;
+	padding: 0 5px;
+}
+div.breadcrumbs div.breadlinks ul li:first-child:before {
+	content: '';
+}
+div.breadcrumbs div.breadlinks li.search form {
+	display: inline;
+}
+div.breadcrumbs div.breadlinks li.search div {
+	display: inline;
+}
+div.breadcrumbs div.breadlinks li.search input {
+	background-color: #222;
+	color: #aaa;
+	border: 1px solid #777;
+	padding: 1px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	width: 120px;
+}
+body.blog h1, body.blog div.text, .upcase {
+	text-transform: none;
+}
+body.blog h1 {
+	font-size: 350%;
+}
+div.blog-wrap {
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.03);
+}
+div.blog-header {
+	background-image: url(/res/blogimg/header.png);
+	line-height: 148px;
+}
+div.blog-header a.mainlink {
+	display: block;
+	text-decoration: none;
+}
+div.blog-header h1, div.blog-header h2 {
+	margin: 0 20px 0 0;
+	text-align: left;
+	padding: 0;
+	width: 100%;
+	text-transform: lowercase;
+	display: none;
+}
+div.post div.date {
+	background-color: rgba(0, 0, 0, 0.4);
+	float: right;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	width: 50px;
+}
+div.post h3.title {
+	text-align: left;
+	width: 100%;
+	margin: 20px 0;
+	padding: 0;
+	font-weight: normal;
+}
+div.post h3.title a {
+	color: white;
+	text-decoration: none;
+	font-size: 300%;
+}
+div.post div.post-tail {
+	margin: 20px 0;
+	padding: 7px;
+	font-family: verdana, sans-serif;
+	font-size: 9pt;
+	background-color: rgba(255, 255, 255, 0.05);
+}
+div.post div.post-tail div.left {
+	float: left;
+}
+
+div.post div.post-tail div.right {
+	float: right;
+}
+div.post div.post-body {
+	border-width: 0 7px;
+	border-color: #666;
+	border-style: solid;
+	padding: 1px 20px;
+	line-height: 180%;
+}
+div.post div.post-body blockquote {
+	padding: 10px;
+	border: 1px dotted #aaa;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+div.navigation {
+	text-align: center;
+}
+div.navigation a {
+	font-size: 350%;
+	font-family: impact, sans-serif;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 5px 15px;
+	background-color: #262626;
+}
+div.post.comment {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+div.post.comment div.left {
+	float: left;
+	margin-right: 20px;
+}
+div.post.comment div.comment_author {
+	font-size: x-large;
+}
+div.post.comment div.comment_author a {
+	text-decoration: none;
+}
+div.post.comment.alt {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+h2.label {
+	font-weight: normal;
+}
+div.clearer {
+	clear: both;
+}
+

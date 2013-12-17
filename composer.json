@@ -1,0 +1,13 @@
+{
+    "name": "fuhry/fuhryweb",
+    "authors": [
+        {
+            "name": "Dan Fuhry",
+            "email": "dan@fuhry.com"
+        }
+    ],
+    "require": {
+        "michelf/php-markdown": "*",
+        "smarty/smarty": "*"
+    }
+}
