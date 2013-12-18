@@ -9,6 +9,8 @@ use \Smarty;
 
 require 'inc/smarty-functions.php';
 
+define('THEME', 'fuhry');
+
 define('BASEURL', dirname($_SERVER['PHP_SELF']) . '/');
 define('BASEDIR', dirname(__FILE__) . '/');
 
@@ -25,15 +27,23 @@ if ( !file_exists($mdfile = BASEDIR . "pages/$uri.md") )
 	redirect('index');
 
 $markdown = file_get_contents($mdfile);
+//$html = htmlentities(Markdown::defaultTransform($markdown), ENT_HTML5 | ENT_NOQUOTES, 'UTF-8');
+$html = Markdown::defaultTransform($markdown);
 
 $smarty = new Smarty();
-$smarty->setTemplateDir(BASEDIR . 'templates/');
+$smarty->setTemplateDir(BASEDIR . 'themes/' . THEME . '/templates/');
 $smarty->setCompileDir( BASEDIR . 'cache/templates/compiled/');
 $smarty->setConfigDir(  BASEDIR . 'templates/');
 $smarty->setCacheDir(   BASEDIR . 'cache/templates/');
 
 $smarty->assign('baseurl', BASEURL);
-$smarty->assign('content', Markdown::defaultTransform($markdown));
+$smarty->assign('themeurl', BASEURL . 'themes/' . THEME);
+$smarty->assign('content', $html);
+$smarty->assign('title', false);
+
+// allow markdown pages to set the page title
+if ( preg_match('/<!-- title: (.*?) -->/', $markdown, $match) )
+	$smarty->assign('title', $match[1]);
 
 $smarty->display('page.tpl');
 

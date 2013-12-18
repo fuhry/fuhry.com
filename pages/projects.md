@@ -1,3 +1,5 @@
+<!-- title: projects -->
+
 Technical projects
 ==================
 
