@@ -27,13 +27,6 @@ if ( empty($uri) )
 if ( !preg_match('#^[A-Za-z0-9/_-]+$#', $uri) )
 	redirect('index');
 
-if ( !file_exists($mdfile = BASEDIR . "pages/$uri.md") )
-	redirect('index');
-
-$markdown = file_get_contents($mdfile);
-//$html = htmlentities(Markdown::defaultTransform($markdown), ENT_HTML5 | ENT_NOQUOTES, 'UTF-8');
-$html = Markdown::defaultTransform($markdown);
-
 $smarty = new Smarty();
 $smarty->setTemplateDir(BASEDIR . 'themes/' . THEME . '/templates/');
 $smarty->setCompileDir( BASEDIR . 'cache/templates/compiled/');
@@ -42,14 +35,27 @@ $smarty->setCacheDir(   BASEDIR . 'cache/templates/');
 
 $smarty->assign('baseurl', BASEURL);
 $smarty->assign('themeurl', BASEURL . 'themes/' . THEME);
-$smarty->assign('content', $html);
 $smarty->assign('gitrev', GITREV);
 $smarty->assign('year', date('Y'));
 $smarty->assign('title', false);
 
-// allow markdown pages to set the page title
-if ( preg_match('/<!-- title: (.*?) -->/', $markdown, $match) )
-	$smarty->assign('title', $match[1]);
+if ( file_exists($mdfile = BASEDIR . "pages/$uri.md") )
+{
+	$markdown = file_get_contents($mdfile);
+	//$html = htmlentities(Markdown::defaultTransform($markdown), ENT_HTML5 | ENT_NOQUOTES, 'UTF-8');
+	$html = Markdown::defaultTransform($markdown);
+	// allow markdown pages to set the page title
+	if ( preg_match('/<!-- title: (.*?) -->/', $markdown, $match) )
+		$smarty->assign('title', $match[1]);
+}
+else
+{
+	header('HTTP/1.1 404 Not Found');
+	
+	$html = $smarty->fetch('404.tpl');
+}
+
+$smarty->assign('content', $html);
 
 $smarty->display('page.tpl');
 
