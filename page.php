@@ -14,7 +14,7 @@ define('THEME', 'fuhry');
 define('BASEURL', rtrim(dirname($_SERVER['PHP_SELF']), '/') . '/');
 define('BASEDIR', dirname(__FILE__) . '/');
 
-exec(sprintf('git --git-dir=%s rev-parse HEAD', escapeshellarg(BASEDIR . '.git')), $head);
+exec(sprintf('/usr/bin/git --git-dir=%s rev-parse HEAD', escapeshellarg(BASEDIR . '.git')), $head);
 
 define('GITREV', substr(implode('', $head), 0, 7));
 
