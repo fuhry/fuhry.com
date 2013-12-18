@@ -1,25 +1,30 @@
 <?php
 
-// I had to kinda trick myself into believing that this was actually PHP.
-
+// load 3rd party stuff
+// I had to kinda trick myself into believing that this was actually PHP:
 require 'vendor/autoload.php';
 
 use \Michelf\Markdown;
 use \Smarty;
 
+// load local stuff
 require 'inc/smarty-functions.php';
 
+// which set of templates and resources will be used
 define('THEME', 'fuhry');
 
+// these two constants help us find further resources
 define('BASEURL', rtrim(dirname($_SERVER['PHP_SELF']), '/') . '/');
 define('BASEDIR', dirname(__FILE__) . '/');
 
-exec(sprintf('/usr/bin/git --git-dir=%s rev-parse HEAD', escapeshellarg(BASEDIR . '.git')), $head);
+// get git revision
+$head = file_get_contents(BASEDIR . '.git/refs/heads/master');
+define('GITREV', substr($head, 0, 7));
 
-define('GITREV', substr(implode('', $head), 0, 7));
-
+// begin routing logic - determine page name from request URI
 $uri = substr($_SERVER['REQUEST_URI'], strlen(BASEURL));
 
+// emulate DirectoryIndex
 if ( empty($uri) )
 	$uri = 'index';
 
@@ -27,6 +32,7 @@ if ( empty($uri) )
 if ( !preg_match('#^[A-Za-z0-9/_-]+$#', $uri) )
 	redirect('index');
 
+// init and configure Smarty
 $smarty = new Smarty();
 $smarty->setTemplateDir(BASEDIR . 'themes/' . THEME . '/templates/');
 $smarty->setCompileDir( BASEDIR . 'cache/templates/compiled/');
@@ -39,24 +45,29 @@ $smarty->assign('gitrev', GITREV);
 $smarty->assign('year', date('Y'));
 $smarty->assign('title', false);
 
+// try to load markdown file for this page...
 if ( file_exists($mdfile = BASEDIR . "pages/$uri.md") )
 {
+	// got it - read and parse
 	$markdown = file_get_contents($mdfile);
-	//$html = htmlentities(Markdown::defaultTransform($markdown), ENT_HTML5 | ENT_NOQUOTES, 'UTF-8');
 	$html = Markdown::defaultTransform($markdown);
+	
 	// allow markdown pages to set the page title
 	if ( preg_match('/<!-- title: (.*?) -->/', $markdown, $match) )
 		$smarty->assign('title', $match[1]);
 }
 else
 {
-	header('HTTP/1.1 404 Not Found');
+	// no such page... show 404
 	
+	header('HTTP/1.1 404 Not Found');
 	$html = $smarty->fetch('404.tpl');
 }
 
+// we have our content; tell smarty what it is
 $smarty->assign('content', $html);
 
+// aaaaaand display!
 $smarty->display('page.tpl');
 
 #################
