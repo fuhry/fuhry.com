@@ -11,7 +11,7 @@ require 'inc/smarty-functions.php';
 
 define('THEME', 'fuhry');
 
-define('BASEURL', dirname($_SERVER['PHP_SELF']) . '/');
+define('BASEURL', rtrim(dirname($_SERVER['PHP_SELF']), '/') . '/');
 define('BASEDIR', dirname(__FILE__) . '/');
 
 $uri = substr($_SERVER['REQUEST_URI'], strlen(BASEURL));
