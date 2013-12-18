@@ -14,6 +14,10 @@ define('THEME', 'fuhry');
 define('BASEURL', rtrim(dirname($_SERVER['PHP_SELF']), '/') . '/');
 define('BASEDIR', dirname(__FILE__) . '/');
 
+exec(sprintf('git --git-dir=%s rev-parse HEAD', escapeshellarg(BASEDIR . '.git')), $head);
+
+define('GITREV', substr(implode('', $head), 0, 7));
+
 $uri = substr($_SERVER['REQUEST_URI'], strlen(BASEURL));
 
 if ( empty($uri) )
@@ -39,6 +43,8 @@ $smarty->setCacheDir(   BASEDIR . 'cache/templates/');
 $smarty->assign('baseurl', BASEURL);
 $smarty->assign('themeurl', BASEURL . 'themes/' . THEME);
 $smarty->assign('content', $html);
+$smarty->assign('gitrev', GITREV);
+$smarty->assign('year', date('Y'));
 $smarty->assign('title', false);
 
 // allow markdown pages to set the page title

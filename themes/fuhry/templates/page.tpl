@@ -34,7 +34,7 @@
 				{internal_link href="contact" title="Contact"}
 			</ul>
 			<div class="copyright">
-				&copy; 2013 // rev. 13.12.1 / <a href="{$baseurl}disclaimer">disclaimer</a>
+				&copy; {$year} // <a href="{$baseurl}disclaimer">disclaimer</a> / <a href="https://github.com/fuhry/fuhry.com">src @ github</a> / r{$gitrev}
 			</div>
 		</div>
 		
