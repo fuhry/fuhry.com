@@ -1,11 +1,13 @@
 <!-- title: projects -->
 
+*[KCRAP]: Kerberos Challenge-Response Authentication Protocol
+
 Technical projects
 ==================
 
 **[Enano CMS](http://enanocms.org/)** - Not as actively developed as I'd like it to be, but this is the project that taught me web development, design, system administration, infrastructure management, vulnerability reporting, the free software ecosystem, and countless other subjects. I still [commit bugfixes](http://hg.enanocms.org/repos/enano-1.1/) every once in a while.
 	
-**[KCRAP improvements for EAP under Linux](https://aur.archlinux.org/packages.php?ID=53870)** - It occurred to me as I was playing around with WPA enterprise that if you want your Windows clients to be able to use your enterprise WiFi setup without installing additional supplicant software, the only solution was to use Active Directory. This is because Windows clients use MSCHAP version 2 to perform authentication. This was an extensive project in late 2011/early 2012 during which I brought the [<acronym title="Kerberos Challenge-Response Authentication Protocol">KCRAP</acronym>](http://www.spock.org/kcrap/) server and client up to date and modified them to include additional fields relied on for MSCHAPv2 over PEAP. The result is that you can now support Windows clients on your 802.1x-enabled network without buying and installing additional supplicant software and without using Windows servers. Published as an Arch Linux package.
+**[KCRAP improvements for EAP under Linux](https://aur.archlinux.org/packages.php?ID=53870)** - It occurred to me as I was playing around with WPA enterprise that if you want your Windows clients to be able to use your enterprise WiFi setup without installing additional supplicant software, the only solution was to use Active Directory. This is because Windows clients use MSCHAP version 2 to perform authentication. This was an extensive project in late 2011/early 2012 during which I brought the [KCRAP](http://www.spock.org/kcrap/) server and client up to date and modified them to include additional fields relied on for MSCHAPv2 over PEAP. The result is that you can now support Windows clients on your 802.1x-enabled network without buying and installing additional supplicant software and without using Windows servers. Published as an Arch Linux package.
 
 **[OpenWRT Netgear WNR2000 port](https://forum.openwrt.org/viewtopic.php?id=18279)** - I made OpenWRT run on Netgear's WNR2000 routers. This includes a repartitioning script which maximizes free space for packages. This project mostly involved scripting but also had a little bit of kernel hacking.
 

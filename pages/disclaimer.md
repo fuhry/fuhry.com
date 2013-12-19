@@ -3,7 +3,7 @@
 Standard disclaimer
 ===================
 
-This website, particularly (but not limited to) my blog, includes the expression of opinion. Occasionally this expression may include controversial political views, language that I would not necessarily use in a corporate setting, or other opinionated and personal content.
+This website includes the expression of opinion. Occasionally this expression may include controversial political views, language that I would not necessarily use in a corporate setting, or other opinionated and personal content.
 
 I must emphasize that the views, ideas, or expressions are entirely my own and not representative of the views, ideas or expressions of any of my employers, past or present, unless explicitly stated otherwise.
 

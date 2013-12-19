@@ -18,28 +18,11 @@
 			})();
 		</script>
 	</head>
-	<body class="page">
-		<div class="left-panel">
-			<ul class="links">
-				{internal_link href="" title="Home"}
-				{internal_link href="bio" title="Bio"}
-				{internal_link href="work" title="Work"}
-				{internal_link href="projects" title="Projects"}
-				<li class="ext"><a href="http://twitter.com/danfuhry">Twitter</a></li>
-				<li class="ext"><a href="http://www.youtube.com/user/danfuhry">YouTube</a></li>
-				<li class="ext"><a href="http://www.facebook.com/fuhry">Facebook</a></li>
-				<li class="ext"><a href="http://gplus.to/fuhry">Google+</a></li>
-				<li class="ext"><a href="http://www.reddit.com/u/fuhry">Reddit</a></li>
-				<li class="ext"><a href="https://github.com/fuhry">Github</a></li>
-				{internal_link href="contact" title="Contact"}
-			</ul>
-			<div class="copyright">
-				{include file="copyright.tpl"}
+	<body class="home">
+		<div class="body-wrapper">
+			<div class="body">
+				{$content}
 			</div>
-		</div>
-		
-		<div class="body">
-			{$content}
 		</div>
 	</body>
 </html>

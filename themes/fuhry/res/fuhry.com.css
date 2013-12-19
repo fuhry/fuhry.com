@@ -4,13 +4,17 @@
  */
 
 body {
+  background-color: #101010;
+  color: #FFFFFF;
+  margin: 0;
+  height: 100%;
+}
+
+body.page {
   font-family: impact, helvetica, sans-serif;
   background-repeat: no-repeat;
   background-position: center 10px;
-  background-color: #101010;
   background-attachment: fixed;
-  color: #FFFFFF;
-  margin: 0;
   padding: 0 12px 0 0;
   height: 100%;
 }
@@ -42,6 +46,7 @@ div.left-panel {
 		text-decoration: none;
 		display: block;
 		padding: 4px 0 4px 13px;
+		color: #777;
 	}
 	
 	div.left-panel ul.links li a:hover {
@@ -80,15 +85,20 @@ div.left-panel {
 		font-family: tahoma, arial, helvetica, sans-serif;
 		font-size: 8pt;
 		color: #777;
+		text-transform: lowercase;
 	}
+	
+		div.left-panel div.copyright a:link, div.left-panel div.copyright a:visited {
+			color: #777;
+		}
 
 a:link, a:visited {
   color: #777;
   text-decoration: underline;
 }
-acronym {
+
+acronym, abbr {
   cursor: help;
-  border-bottom: 1px dotted #777;
 }
 
 address, div.text.footer {
@@ -103,7 +113,7 @@ address.wp-copyright {
   text-align: center;
 }
 
-div.body {
+body.page div.body {
 	margin-left: 320px;
 	padding-top: 30px;
 }
@@ -120,6 +130,84 @@ p, div.body ul {
 	color: #aaa;
 }
 
+/* homepage */
+body.home {
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	margin: 0;
+	padding: 0;
+}
+
+	body.home div.body-wrapper {
+		background-color: rgba(0, 0, 0, 0.7);
+		position: absolute;
+		top: 15%;
+	}
+
+	body.home div.body {
+		width: 70%;
+		padding: 2em;
+		margin: 0 auto;
+	}
+	
+	body.home p, body.home div.body ul {
+		font-family: dejavu sans, arial, helvetica, sans-serif;
+		font-weight: 300;
+		font-size: 14pt;
+		color: #eee;
+	}
+
+	h1.home-header {
+		margin: 5px 0;
+		font-size: 56pt;
+		font-family: Lucida Grande, helvetica, sans-serif;
+	}
+	
+	body.home a:link, body.home a:visited {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+/* "quick facts" box */
+body.home div.quickfacts {
+	
+}
+
+	body.home div.quickfacts ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	body.home div.quickfacts ul li {
+		float: left;
+		padding-right: 1.8em;
+		font-size: smaller;
+	}
+	
+	body.home div.quickfacts ul li a {
+		text-decoration: none;
+	}
+	
+	body.home div.quickfacts ul li:hover, div.quickfacts ul li:hover a {
+		color: #ccc;
+	}
+	
+	body.home div.quickfacts i.fa {
+		color: white;
+	}
+	
+	body.home div.quickfacts ul li a.icon-only-link {
+		font-size: large;
+	}
+	
+	body.home div.quickfacts ul li a.icon-only-link:hover {
+		text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+	}
+
+/* Twitter feed (though that hasn't been on the homepage for a while) */
 div.twat {
 	border-top: 1px solid #444;
 }
