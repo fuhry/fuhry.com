@@ -2,6 +2,9 @@
  * vim: ft=css
  * jedit: :mode=css:
  */
+ 
+/* imports */
+@import url(fonts/dejavusans-extralight.css);
 
 body {
   background-color: #101010;
@@ -123,12 +126,36 @@ h1 {
 	font-size: 32pt;
 }
 
-p, div.body ul {
+body.page h1, body.page h2, body.page h3, body.page h4 {
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+p, div.body ul, div.body ol {
 	font-family: dejavu sans mono, monaco, lucida console, monospace;
 	font-size: 12pt;
 	line-height: 160%;
 	color: #aaa;
 }
+
+div.footnotes {
+	margin-top: 4em;
+}
+
+	div.footnotes ol {
+		padding-left: 1.5em;
+	}
+
+	div.footnotes ol li, div.footnotes ol li p {
+		font-size: small;
+		color: #555;
+	}
+
+	div.footnotes hr {
+		border-width: 1px 0 0 0;
+		border-style: solid;
+		border-color: #333;
+	}
 
 /* homepage */
 body.home {
@@ -153,7 +180,7 @@ body.home {
 	}
 	
 	body.home p, body.home div.body ul {
-		font-family: dejavu sans, arial, helvetica, sans-serif;
+		font-family: DejaVuSansExtraLight, dejavu sans, arial, helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 14pt;
 		color: #eee;
@@ -168,6 +195,15 @@ body.home {
 	body.home a:link, body.home a:visited {
 		color: #fff;
 		text-decoration: underline;
+	}
+	
+	body.home div.footer {
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		font-family: tahoma;
+		font-size: 8pt;
+		text-transform: lowercase;
 	}
 
 /* "quick facts" box */

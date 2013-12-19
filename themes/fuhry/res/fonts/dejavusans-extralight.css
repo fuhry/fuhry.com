@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'DejaVuSansExtraLight';
+    src: url('dejavusans-extralight.eot');
+    src: url('dejavusans-extralight.eot') format('embedded-opentype'),
+         url('dejavusans-extralight.woff') format('woff'),
+         url('dejavusans-extralight.ttf') format('truetype'),
+         url('dejavusans-extralight.svg#DejaVuSansExtraLight') format('svg');
+}

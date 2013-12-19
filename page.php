@@ -4,7 +4,7 @@
 // I had to kinda trick myself into believing that this was actually PHP:
 require 'vendor/autoload.php';
 
-use \Michelf\Markdown;
+use \Michelf\MarkdownExtra;
 use \Smarty;
 
 // load local stuff
@@ -34,7 +34,7 @@ if ( !preg_match('#^[A-Za-z0-9/_-]+$#', $uri) )
 
 // init and configure Smarty
 $smarty = new Smarty();
-$smarty->setTemplateDir(BASEDIR . 'themes/' . THEME . '/templates/');
+$smarty->setTemplateDir($templateDir = BASEDIR . 'themes/' . THEME . '/templates/');
 $smarty->setCompileDir( BASEDIR . 'cache/templates/compiled/');
 $smarty->setConfigDir(  BASEDIR . 'templates/');
 $smarty->setCacheDir(   BASEDIR . 'cache/templates/');
@@ -50,11 +50,22 @@ if ( file_exists($mdfile = BASEDIR . "pages/$uri.md") )
 {
 	// got it - read and parse
 	$markdown = file_get_contents($mdfile);
-	$html = Markdown::defaultTransform($markdown);
+	$parser = new MarkdownExtra;
+	$html = $parser->defaultTransform($markdown);
 	
 	// allow markdown pages to set the page title
 	if ( preg_match('/<!-- title: (.*?) -->/', $markdown, $match) )
 		$smarty->assign('title', $match[1]);
+	
+	// font awesome icons
+	$html = preg_replace('/\{([a-z-]+)\}/', '<i class="fa fa-$1"></i>', $html);
+	
+	// determine last-modified
+	$mtime = @filemtime($mdfile);
+	if ( is_int($mtime) )
+	{
+		header('Last-Modified: ' . date(DATE_RFC822, $mtime));
+	}
 }
 else
 {
@@ -68,7 +79,11 @@ else
 $smarty->assign('content', $html);
 
 // aaaaaand display!
-$smarty->display('page.tpl');
+$template = 'page';
+if ( file_exists($templateDir . "$uri.tpl") )
+	$template = $uri;
+
+$smarty->display("$template.tpl");
 
 #################
 # Functions

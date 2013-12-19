@@ -8,6 +8,7 @@
     ],
     "require": {
         "michelf/php-markdown": "*",
-        "smarty/smarty": "*"
+        "smarty/smarty": "*",
+        "fortawesome/font-awesome": "*"
     }
 }

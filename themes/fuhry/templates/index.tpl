@@ -24,5 +24,10 @@
 				{$content}
 			</div>
 		</div>
+		<div class="footer">
+			<div class="footer-inside">
+				{include file="copyright.tpl"}
+			</div>
+		</div>
 	</body>
 </html>
