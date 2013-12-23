@@ -37,13 +37,10 @@ only hope to possess all of these traits myself someday.
 ## Wait, that doesn't sound like most Christians I know. ##
 
 If that's the case, I apologize on behalf of them. A quote from
-Mohandas Gandhi sums up the situation perfectly:
+Mohandas Gandhi[^1] sums up the situation perfectly:
 
 > I like your Christ; I do not like your Christians. Your
 > Christians are so unlike your Christ.
-
-_(Full disclosure: the quote is disputed as having come from Gandhi,
-but its message remains the same.)_
 
 It's not the religion that's broken, it's the people who claim to
 follow it.
@@ -159,3 +156,7 @@ fully realize this. I can't "convert" you.
 
 If, however, you see something in Christianity that you want, talk
 to me and I'll do my best to answer your questions.
+
+[^1]:
+	Full disclosure: the quote is disputed as having come from
+	Gandhi, but its message remains the same.
