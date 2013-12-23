@@ -7,7 +7,7 @@
 * <a class="icon-only-link" href="http://gplus.to/fuhry" title="Google+">{google-plus-square}</a>
 * <a class="icon-only-link" href="https://www.facebook.com/fuhry" title="Facebook">{facebook-square}</a>
 * <a class="icon-only-link" href="https://twitter.com/danfuhry" title="Twitter">{twitter}</a>
-* <a class="icon-only-link" href="https://github.com/fuhry" title="Twitter">{github}</a>
+* <a class="icon-only-link" href="https://github.com/fuhry" title="GitHub">{github}</a>
 * <a class="icon-only-link" href="https://www.youtube.com/danfuhry" title="YouTube">{youtube-play}</a>
 <div class="clearer"></div>
 </div>
