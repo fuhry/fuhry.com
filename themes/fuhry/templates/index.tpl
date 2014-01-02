@@ -21,6 +21,9 @@
 	<body class="home">
 		<div class="body-wrapper">
 			<div class="body">
+				<div class="pic">
+					<img alt="pic of me" src="{$baseurl}assets/pic.png" />
+				</div>
 				{$content}
 			</div>
 		</div>

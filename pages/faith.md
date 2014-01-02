@@ -31,8 +31,8 @@ guide for making decisions. Be humble and respectful to everyone;
 trust that God has everything under control and will give you
 strength through trials and tough decisions; pour compassion on
 those who hurt the most in your life. In short, live for others.
-People who embody these traits are beautiful to me, and I can
-only hope to possess all of these traits myself someday.
+I admire people who embody these traits, and I can only hope to
+possess all of these traits myself someday.
 
 ## Wait, that doesn't sound like most Christians I know. ##
 

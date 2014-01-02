@@ -179,6 +179,10 @@ body.home {
 		margin: 0 auto;
 	}
 	
+	body.home div.pic {
+		float: right;
+	}
+	
 	body.home p, body.home div.body ul {
 		font-family: DejaVuSansExtraLight, dejavu sans, arial, helvetica, sans-serif;
 		font-weight: 300;

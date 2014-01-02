@@ -12,19 +12,15 @@
 <div class="clearer"></div>
 </div>
 
-I [write tools](projects) that make building awesome functional networks
-easy. My skills in system administration, OS architecture,
-software engineering, web design, and networking can work
-together to turn your complex integration dreams into a
-reality.
+I [write tools](projects) that make building awesome functional networks easy. My skills in system
+administration, OS architecture, software engineering, web design, and networking can combine together
+to turn your complex integration and automation dreams into a reality.
 
 Currently I [head up](work) the Advanced Research Group at [Datto Inc.](http://dattobackup.com),
 solving tough technical challenges and making our products more advanced than anything else out
 there.
 
-I'm also a musician. I play keyboards [for churches](faith) but also
-am obsessed with progressive rock and metal and am currently
-in search of a band to join up with.
+I'm also a keyboardist. I play progressive and neo-classical metal.
 
 Connect with me through the social media profiles above. Or
 see my [bio](bio).

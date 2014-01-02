@@ -25,7 +25,6 @@
 				{internal_link href="bio" title="Bio"}
 				{internal_link href="work" title="Work"}
 				{internal_link href="projects" title="Projects"}
-				{internal_link href="faith" title="Faith"}
 				<li class="ext"><a href="http://twitter.com/danfuhry">Twitter</a></li>
 				<li class="ext"><a href="http://www.youtube.com/user/danfuhry">YouTube</a></li>
 				<li class="ext"><a href="http://www.facebook.com/fuhry">Facebook</a></li>
