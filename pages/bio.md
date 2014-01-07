@@ -44,5 +44,5 @@ Interests
 	* Hammond organs. Slowly getting my jazz hands.
 	* Traditional and FM synthesis/sound design, and the electronics associated with it
 * Cars
-	* Current daily driver: 2009 Mazdaspeed3
-	* Current project: 2002 (MkIV) GTI 1.8T. It was my daily driver until the motor blew up on me. I'm planning to use the car as a chance to learn how to rebuild motors.
+	* Current daily driver: [2009 Mazdaspeed3](cars/ms3)
+	* Current project: [2002 (MkIV) GTI 1.8T](cars/gti). It was my daily driver until the motor blew up on me. I'm planning to use the car as a chance to learn how to rebuild motors.
