@@ -3,7 +3,7 @@
 <div class="quickfacts" markdown="1">
 * {map-marker} Norwalk, CT
 * {briefcase} Dev @ <a href="http://dattobackup.com/">Datto</a>
-* {envelope} <a href="mailto:dan@fuhry.com">dan@fuhry.com</a>
+* {envelope} <a href="contact">dan@fuhry.com</a>
 * <a class="icon-only-link" href="http://gplus.to/fuhry" title="Google+">{google-plus-square}</a>
 * <a class="icon-only-link" href="https://www.facebook.com/fuhry" title="Facebook">{facebook-square}</a>
 * <a class="icon-only-link" href="https://twitter.com/danfuhry" title="Twitter">{twitter}</a>
