@@ -31,3 +31,5 @@ It came with the BOSE sound system, and nobody likes BOSE, so I replaced the amp
 * Currently running the stock head unit
 
 The wiring job of course looks like it was done by a networking major. A specific wiring harness, Metra's model 70-2003, says it's made for GM vehicles but also functions as the "amplifier" side of the BOSE audio feed, meaning I was able to build a harness that plugs directly into the OEM connector. Buy two - it only comes with 14 pins and you need 17.
+
+[A few pictures](http://img.fuhry.com/a/XcvST).
