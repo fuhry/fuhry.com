@@ -23,4 +23,4 @@ there.
 I'm also a keyboardist. I play progressive and neo-classical metal.
 
 Connect with me through the social media profiles above. Or
-see my [bio](bio).
+see my [bio](bio) or [blog](blog).
