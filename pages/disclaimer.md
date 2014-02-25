@@ -5,7 +5,7 @@ Standard disclaimer
 
 This website includes the expression of opinion. Occasionally this expression may include controversial political views, language that I would not necessarily use in a corporate setting, or other opinionated and personal content.
 
-I must emphasize that the views, ideas, or expressions are entirely my own and not representative of the views, ideas or expressions of any of my employers, past or present, unless explicitly stated otherwise.
+I must emphasize that all views, ideas, or expressions on this site are entirely my own and not representative of the views, ideas or expressions of any of my employers, past or present, unless explicitly stated otherwise.
 
 Furthermore, none of the opinions, views, ideas or expressions on this website are to be construed as to reflect on my professional conduct.
 
