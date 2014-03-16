@@ -37,7 +37,7 @@ Interests
 	* System level programming (C)
 	* [NSIS](http://nsis.sourceforge.net/)
 * Music
-	* [Nord keyboards](http://www.nordkeyboards.com/) &ndash; I own a Nord Stage 2 and might go for a Nord Wave or Lead in the future
+	* [Nord keyboards](http://www.nordkeyboards.com/) &ndash; I own two Nord keyboards, a Stage 2 (HA88 rev. A) and a Lead 3.
 	* [M-Audio](http://www.m-audio.com/) &ndash; I loved my Keystation 88es to death before buying my current Axiom Pro 61. I also have their BX5a monitors.
 	* Metal: neo-classical, progressive, symphonic, anything that gets you thinking. Think Symphony X, Dream Theater, Epica, Opeth, Between the Buried and Me, ...
 	* Classical: J.S. Bach, Beethoven, Antonín Dvořák, and a few others
