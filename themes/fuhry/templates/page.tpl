@@ -5,6 +5,8 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="{$baseurl}vendor/fortawesome/font-awesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="{$themeurl}/res/fuhry.com.css?13.12.1" />
+		<link rel="stylesheet" type="text/css" href="{$themeurl}/res/fuhry.com.responsive.css?13.12.1" />
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 		
 		<script type="text/javascript">
 			var _gaq = _gaq || [];

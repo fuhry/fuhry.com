@@ -5,7 +5,7 @@
 
 My daily driver is a 2009 (generation 1) Mazdaspeed 3 in Metropolitan Gray Mica, purchased in December of 2013.
 
-Right now, the motor is bone stock, but when you look at what it comes with, you'll see why:
+Right now, the motor is mostly stock, but when you look at what it comes with, you'll see why:
 
 * 2.3L straight-four DOHC, turbocharged, 274hp
 * Transverse mounted front-wheel drive
@@ -14,11 +14,17 @@ Right now, the motor is bone stock, but when you look at what it comes with, you
 
 ## Powertrain mods
 
-I'm planning the following powertrain modifications to start with:
+I've made the following modifications thus far:
 
-* [Cobb short ram air intake](http://www.cobbtuning.com/MAZDASPEED3-SF-Intake-Kit-p/771500.htm)
+* [Corksport Stage 2 short-ram air intake and turbo inlet pipe](http://www.corksport.com/corksport-power-series-short-ram-intake-2010-mazdaspeed-3.html)
+* [Corksport urethane race rear motor mount](http://www.corksport.com/corksport-mazdaspeed-3-mazda-3-race-rear-motor-mount.html)
+
+
+The following are planned once the budget allows:
+
 * [Cobb Accessport tuner](http://www.cobbtuning.com/MAZDASPEED-Accessport-V3-p/ap3-maz-002.htm)
 * Front-mount intercooler (FMIC) swap **or** a [scooped hood](http://www.streetunit.com/DG_Motorsports_Vented_Hood_for_07_09_Mazdaspeed_3_p/dgms32gh.htm)
+* [Corksport's turboback exhaust](http://www.corksport.com/corksport-power-series-mazdaspeed-3-turbo-back-exhaust-system.html) (maybe... I don't like it too loud/obnoxious)
 
 ## Audio system
 

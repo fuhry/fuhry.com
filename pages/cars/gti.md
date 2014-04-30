@@ -11,9 +11,9 @@ I bought the car in September of 2013 from a good friend who loved the thing to 
 
 During the 3 months I was driving it, I fixed everything and made it a car you could be proud of again.
 
-Then I drove it to Jersey to pick up a Craigslist find, and as I was getting off of the highway, a loud clunking sound came from the motor. I ripped off the timing cover and felt the belt. It was loose.
+Then I drove it to Jersey to pick up a Craigslist find, and as I was getting off of the highway, a loud clunking sound came from the motor. I ripped off the upper timing cover and felt the belt. It was loose.
 
-Ultimately what killed the valves was a weak bolt on the idler pulley, which is driven by the timing belt. The bolt snapped in half, halting force transmission to the camshafts and causing the pistons to collide with the valves.
+Ultimately what killed it was a weak bolt on the tensioner pulley, which is driven by the timing belt. The bolt snapped in half, halting force transmission to the camshafts and causing the pistons to collide with the exhaust valves.
 
 ## Under the hood
 
@@ -21,8 +21,9 @@ The car came stock with a ~180HP turbocharged 1.8L straight-four motor, engine c
 
 Other mods to the GTI (most done by the previous two owners) include:
 
+* Frankenmotor: AEB head/AGU intake/AWP block
 * GIAC X+ tune
-* Techtonics cams
+* Techtonics cams (will be carried over to the new head)
 * Forge 007 diverter valve
 * ECS Tuning N75H valve (wastegate frequency control)
 * 034 Motorsport reinforced silicone PCV hose kit
@@ -39,9 +40,9 @@ With the above modifications, the car was pushing about 250hp by the previous ow
 
 ## The plan
 
-I have plans to rebuild the motor in late spring/early summer 2014. First, the cylinder head will be removed to see if there is any damage to the pistons - if so, a full motor swap or rebuild will be necessary.
+As of late April 2014, I've pulled the cylinder head out. The outcome was bad, but not as bad as it could have been. Every exhaust valve is bent, but the pistons are nearly perfect and little else was damaged.
 
-If the head can be replaced without dropping the motor, I'll get a remanufactured AEB head and supporting equipment and get the car back on the road hopefully by fall of 2014.
+I've purchased a remanufactured AEB head and worked with a friend in the UK to obtain an intake manifold from the large-port transverse AGU motor (which was never sold in the US). The motor will be rebuilt with these components plus a Gates long-life timing belt, Siemens 630cc fuel injectors, and the existing K03S turbocharger.
 
 I'm not sure what my plan is for the GTI after the rebuild. On the one hand, owning a backup car is nice, but insurance is expensive, and the GTI and MS3 are both "hot hatches." I definitely don't want to give it up though, because the car has remained in the same circle of friends since it was new, and it's one of the most unique looking Mk4s out there. 
 

@@ -1,0 +1,62 @@
+@media only screen and (max-width: 400px) {
+	body.home div.pic {
+		margin: 0 auto 1em auto;
+	}
+
+	body.home header, body.home section {
+		padding-top: 0;
+		height: auto;
+		min-height: 100%;
+	}
+
+	body.home div.band div.section-wrapper {
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	body.home div.quickfacts ul.annotated-facts li {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+	
+	body.home header h1 {
+		font-size: xx-large;
+	}
+
+	body.home div.quickfacts ul.social-media {
+		margin-top: 1em;
+	}
+
+	body.home header div.scroller {
+		display: none;
+	}
+
+	body.home div.quickfacts ul.social-media i.fa {
+		font-size: 24pt;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	body.home div.band div.section-wrapper {
+		width: 90%;
+		padding: 5%;
+	}
+
+	body.home header, body.home section {
+		padding-top: 0;
+		height: auto;
+		min-height: 100%;
+	}
+
+	body.home div.quickfacts ul.annotated-facts li {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+	
+	body.home header h1 {
+		font-size: xx-large;
+	}
+}
+

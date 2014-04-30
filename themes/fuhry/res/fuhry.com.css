@@ -6,11 +6,16 @@
 /* imports */
 @import url(fonts/dejavusans-extralight.css);
 
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 body {
   background-color: #101010;
   color: #FFFFFF;
   margin: 0;
-  height: 100%;
 }
 
 body.page {
@@ -131,7 +136,7 @@ body.page h1, body.page h2, body.page h3, body.page h4 {
 	letter-spacing: 1px;
 }
 
-p, div.body ul, div.body ol {
+p, div.body ul, div.body ol, header ul, section ul {
 	font-family: dejavu sans mono, monaco, lucida console, monospace;
 	font-size: 12pt;
 	line-height: 160%;
@@ -159,56 +164,135 @@ div.footnotes {
 
 /* homepage */
 body.home {
-	background-image: url(bg.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
+	background-color: white;
+}
+
+section, header {
 	margin: 0;
 	padding: 0;
 }
 
 	body.home div.body-wrapper {
-		background-color: rgba(0, 0, 0, 0.7);
-		position: absolute;
-		top: 15%;
+		height: 100%;
 	}
 
-	body.home div.body {
+	body.home header, body.home section {
+		min-height: 85%;
+		padding-top: 8%;
+	}
+	
+	body.home section, body.home section div.section-wrapper.has-background {
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		background-color: white;
+	}
+	
+	body.home section div.band div.section-wrapper.has-background {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	
+	body.home header {
+		text-align: center;
+	}
+	
+	body.home section.work {
+		background-image: url(sysadmin.jpg);
+	}
+	
+	body.home section.keys {
+		background-image: url(keys.jpg);
+	}
+	
+	body.home section.cars {
+		background-image: url(ms3.jpg);
+	}
+	
+	body.home section.contact {
+		background-image: url(norwalk.jpg);
+	}
+	
+	body.home section.contact {
+		background-color: #404040;
+		text-align: center;
+	}
+	
+		body.home section.contact h2 {
+			font-size: 48pt;
+			margin: 1em 0;
+			font-weight: normal;
+		}
+	
+	body.home div.band div.section-wrapper {
 		width: 70%;
 		padding: 2em;
 		margin: 0 auto;
 	}
 	
 	body.home div.pic {
-		float: right;
+		display: table;
+		margin: 0 auto 4em auto;
 	}
 	
-	body.home p, body.home div.body ul {
+	body.home p, body.home div.section-wrapper ul {
 		font-family: DejaVuSansExtraLight, dejavu sans, arial, helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 14pt;
-		color: #eee;
 	}
-
+	
 	h1.home-header {
 		margin: 5px 0;
 		font-size: 56pt;
 		font-family: Lucida Grande, helvetica, sans-serif;
 	}
 	
-	body.home a:link, body.home a:visited {
+	body.home h2, body.home h3 {
+		margin: 5px 0;
+		font-family: Lucida Grande, helvetica, sans-serif;
+	}
+	
+	body.home header div.scroller {
+		margin-top: 4em;
+	}
+	
+	/* "Light" screens */
+	body.home div.band, body.home div.band p, body.home div.band ul {
+		color: #202020;
+	}
+	
+	body.home div.band a:link, body.home div.band a:visited {
+		color: #333;
+		text-decoration: underline;
+	}
+	
+	/* "Dark" screens */
+	body.home div.band.dark, body.home div.band.dark p, body.home div.band.dark ul {
+		color: #eee;
+	}
+	
+	body.home div.band.dark a:link, body.home div.band.dark a:visited {
 		color: #fff;
 		text-decoration: underline;
 	}
 	
+	body.home div.band.dark p, body.home div.band.dark ul {
+		color: #eee;
+	}
+	
+	body.home div.band.dark {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	
 	body.home div.footer {
-		position: absolute;
+		position: fixed;
 		bottom: 5px;
 		right: 5px;
 		font-family: tahoma;
 		font-size: 8pt;
 		text-transform: lowercase;
+		color: #aaa;
 	}
 
 /* "quick facts" box */
@@ -217,37 +301,62 @@ body.home div.quickfacts {
 }
 
 	body.home div.quickfacts ul {
-		margin: 0;
+		margin: 0 auto;
 		padding: 0;
 		list-style-type: none;
+		display: table;
 	}
 	
 	body.home div.quickfacts ul li {
 		float: left;
-		padding-right: 1.8em;
+		padding: 0 0.9em;
 		font-size: smaller;
 	}
 	
-	body.home div.quickfacts ul li a {
+	body.home div.band div.quickfacts ul li a {
 		text-decoration: none;
 	}
 	
-	body.home div.quickfacts ul li:hover, div.quickfacts ul li:hover a {
+	body.home div.quickfacts ul.social-media {
+		margin-top: 4em;
+	}
+	
+	body.home div.quickfacts ul.social-media i.fa {
+		font-size: 44pt;
+	}
+	
+	/* light */
+	body.home div.band div.quickfacts ul li:hover, body.home div.band div.quickfacts ul li:hover a {
+		color: #444;
+	}
+	
+	body.home div.band div.quickfacts i.fa {
+		color: black;
+	}
+	
+	body.home div.band div.quickfacts ul li a.icon-only-link:hover {
+		text-shadow: 0 0 7px rgba(82, 168, 236, 0.6);
+	}
+	/* /light */
+	
+	/* dark */
+	body.home div.band.dark div.quickfacts ul li:hover, body.home div.band.dark div.quickfacts ul li:hover a {
 		color: #ccc;
 	}
 	
-	body.home div.quickfacts i.fa {
+	body.home div.band.dark div.quickfacts i.fa {
 		color: white;
 	}
+	
+	body.home div.band.dark div.quickfacts ul li a.icon-only-link:hover {
+		text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
+	}
+	/* /dark */
 	
 	body.home div.quickfacts ul li a.icon-only-link {
 		font-size: large;
 	}
 	
-	body.home div.quickfacts ul li a.icon-only-link:hover {
-		text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
-	}
-
 /* Twitter feed (though that hasn't been on the homepage for a while) */
 div.twat {
 	border-top: 1px solid #444;
