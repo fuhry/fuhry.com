@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>fuhry.com{if $title} &raquo; {$title}{/if}</title>
@@ -31,6 +31,7 @@
 				<li class="ext"><a href="http://twitter.com/danfuhry">Twitter</a></li>
 				<li class="ext"><a href="http://www.youtube.com/user/danfuhry">YouTube</a></li>
 				<li class="ext"><a href="http://www.facebook.com/fuhry">Facebook</a></li>
+				<li class="ext"><a href="http://www.linkedin.com/in/danfuhry">LinkedIn</a></li>
 				<li class="ext"><a href="http://gplus.to/fuhry">Google+</a></li>
 				<li class="ext"><a href="http://www.reddit.com/u/fuhry">Reddit</a></li>
 				<li class="ext"><a href="https://github.com/fuhry">Github</a></li>

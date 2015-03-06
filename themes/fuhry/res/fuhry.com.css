@@ -5,6 +5,28 @@
  
 /* imports */
 @import url(fonts/dejavusans-extralight.css);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300,700,100&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+@media screen and (max-width: 500px) {
+
+	div.left-panel {
+		position: normal;
+		float: none;
+	}
+
+	body.page div.body {
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@media screen and (max-height: 750px) {
+	body.home header div.pic {
+		display: none;
+	}
+}
 
 html, body {
 	height: 100%;
@@ -177,11 +199,12 @@ section, header {
 	}
 
 	body.home header, body.home section {
-		min-height: 85%;
+		min-height: 77%;
 		padding-top: 8%;
+		padding-bottom: 8%;
 	}
 	
-	body.home section, body.home section div.section-wrapper.has-background {
+	body.home header, body.home section, body.home section div.section-wrapper.has-background {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center center;
@@ -196,6 +219,7 @@ section, header {
 	
 	body.home header {
 		text-align: center;
+		background-image: url(ferris.jpg);
 	}
 	
 	body.home section.work {
@@ -233,11 +257,11 @@ section, header {
 	
 	body.home div.pic {
 		display: table;
-		margin: 0 auto 4em auto;
+		margin: 0 auto 2em auto;
 	}
 	
 	body.home p, body.home div.section-wrapper ul {
-		font-family: DejaVuSansExtraLight, dejavu sans, arial, helvetica, sans-serif;
+		font-family: Roboto, dejavu sans, arial, helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 14pt;
 	}
@@ -245,21 +269,32 @@ section, header {
 	h1.home-header {
 		margin: 5px 0;
 		font-size: 56pt;
-		font-family: Lucida Grande, helvetica, sans-serif;
+		font-family: Roboto Slab, helvetica, sans-serif;
+		font-weight: 700;
 	}
 	
 	body.home h2, body.home h3 {
 		margin: 5px 0;
-		font-family: Lucida Grande, helvetica, sans-serif;
+		font-family: Roboto, helvetica, sans-serif;
+		font-weight: 700;
 	}
 	
 	body.home header div.scroller {
-		margin-top: 4em;
+		margin-top: 2em;
 	}
 	
 	/* "Light" screens */
+	body.home header {
+		padding-top: 4%;
+		min-height: 92.5%;
+	}
+	
+	body.home header div.band {
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+	
 	body.home div.band, body.home div.band p, body.home div.band ul {
-		color: #202020;
+		color: #444;
 	}
 	
 	body.home div.band a:link, body.home div.band a:visited {
@@ -309,7 +344,7 @@ body.home div.quickfacts {
 	
 	body.home div.quickfacts ul li {
 		float: left;
-		padding: 0 0.9em;
+		padding: 0 1.2em;
 		font-size: smaller;
 	}
 	
@@ -318,20 +353,20 @@ body.home div.quickfacts {
 	}
 	
 	body.home div.quickfacts ul.social-media {
-		margin-top: 4em;
+		margin-top: 3em;
 	}
 	
 	body.home div.quickfacts ul.social-media i.fa {
-		font-size: 44pt;
+		font-size: 28pt;
 	}
 	
 	/* light */
 	body.home div.band div.quickfacts ul li:hover, body.home div.band div.quickfacts ul li:hover a {
-		color: #444;
+		color: #222;
 	}
 	
 	body.home div.band div.quickfacts i.fa {
-		color: black;
+		color: #333;
 	}
 	
 	body.home div.band div.quickfacts ul li a.icon-only-link:hover {
@@ -564,3 +599,13 @@ div.clearer {
 	clear: both;
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
