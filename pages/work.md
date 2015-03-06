@@ -9,7 +9,7 @@ When I joined, they had just over 20 employees, 2 of whom (the CEO and CTO) were
 
 It worked. Datto has now earned its way into the 38th position on Inc 500's "fastest growing private companies" list. That makes Datto the 38th fastest growing privately held company in the country. Naturally, I take a lot of pride in the role I played to help Datto achieve that, and I greatly enjoy contributing to Datto's R&D efforts to enable us to increase our size and reliability even more.
 
-Today, I head up the Advanced Research Group, a small team of Datto employees who are tasked with solving the toughest technical challenges faced by our new product ideas.
+Today, I'm part of the Advanced Research Group, a small team of Datto employees who are tasked with solving the toughest technical challenges faced by our new product ideas.
 
 Depending on free time (work and my personal life are generally treated as high priorities), I may be able to help you out with your website, network design, system security, security policy, wireless deployment, et cetera. Feel free to [throw your ideas at me](contact) and we can work out a quote and project plan.[^1]
 

@@ -7,7 +7,5 @@ This website includes the expression of opinion. Occasionally this expression ma
 
 I must emphasize that all views, ideas, or expressions on this site are entirely my own and not representative of the views, ideas or expressions of any of my employers, past or present, unless explicitly stated otherwise.
 
-Furthermore, none of the opinions, views, ideas or expressions on this website are to be construed as to reflect on my professional conduct.
-
-My reading of or response to any Datto related requests in social media shall not constitute an obligation or contract to provide any services, enhancements or products.
+My reading of or response to any Datto related requests in social media shall not constitute an obligation or contract by myself or Datto to provide any services, enhancements or products.
 
