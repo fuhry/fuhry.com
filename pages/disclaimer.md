@@ -9,3 +9,7 @@ I must emphasize that all views, ideas, or expressions on this site are entirely
 
 My reading of or response to any Datto related requests in social media shall not constitute an obligation or contract by myself or Datto to provide any services, enhancements or products.
 
+## Trademarks
+
+With the exception of Datto Inc., I have no affiliation with any of the services or companies linked to on this site and identified by name or logo. All trademarks are the property of their respective owners and are used exclusively for identification purposes.
+

@@ -46,3 +46,5 @@ Interests
 * Cars
 	* Current daily driver: [2009 Mazdaspeed3](cars/ms3)
 	* Current project: [2002 (MkIV) GTI 1.8T](cars/gti). It was my daily driver until the motor blew up on me. I'm planning to use the car as a chance to learn how to rebuild motors.
+* Libertarianism
+	* I do not associate or identify with any political party, but most of my beliefs line up with those of the [Libertarian Party](http://www.lp.org/). The amount of sense libertarianism makes causes me to wonder how so few have found it.

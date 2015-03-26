@@ -1,2 +1,23 @@
-FallbackResource page.php
+Allow from all
+
+RewriteEngine on
+
+RewriteCond %{SERVER_NAME} ^fuhry\.(us)$ [OR]
+RewriteCond %{SERVER_NAME} ^www\.fuhry\.(us|com)$
+	RewriteRule ^(.*)$ http://fuhry.com/$1
+
+# Allow removal of .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+	RewriteRule ^([^/]+)(/.*)?$ $1.php$2 [L,QSA]   
+
+FallbackResource /page.php
+
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+<Files ~ checklist>
+	AuthType WebAuth
+	Require user dan bonnie
+</Files>
 
