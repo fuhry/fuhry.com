@@ -23,7 +23,7 @@ I've made the following modifications thus far:
 The following are planned once the budget allows:
 
 * [Cobb Accessport tuner](http://www.cobbtuning.com/MAZDASPEED-Accessport-V3-p/ap3-maz-002.htm)
-* Front-mount intercooler (FMIC) swap **or** a [scooped hood](http://www.streetunit.com/DG_Motorsports_Vented_Hood_for_07_09_Mazdaspeed_3_p/dgms32gh.htm)
+* Front-mount intercooler (FMIC) swap **or** a [scooped hood](http://www.streetunit.com/DG_Motorsports_Vented_Hood_for_07_09_Mazdaspeed_3_p/50-68-3000.htm)
 * [Corksport's turboback exhaust](http://www.corksport.com/corksport-power-series-mazdaspeed-3-turbo-back-exhaust-system.html) (maybe... I don't like it too loud/obnoxious)
 
 ## Audio system

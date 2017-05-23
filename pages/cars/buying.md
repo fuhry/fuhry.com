@@ -48,7 +48,7 @@ Vocab:
 * CUV: Crossover Utility Vehicle; a compact car, but higher off the ground
 * Pickup: vehicle with a separate cab (seating 2-5) and open bed
 
-A lot of people have said they want an SUV for the extra storage space. The idea that SUVs have more space is largely a myth. My girlfriend Bonnie's Jeep Grand Cherokee has only marginally more cargo space than my tiny little VW GTI. The additional ground clearance of the jeep means the wheel wells protrude less into the passenger compartment, which adds a few cubic feet, but honestly, it's not a whole lot.
+A lot of people have said they want an SUV for the extra storage space. The idea that SUVs have more space is largely a myth. A Jeep Grand Cherokee has only marginally more cargo space than my tiny little VW GTI. The additional ground clearance of the jeep means the wheel wells protrude less into the passenger compartment, which adds a few cubic feet, but honestly, it's not a whole lot.
 
 This is really important to consider if fuel efficiency is an important factor for you. A small hatchback built with the goal of being a gas-saver will hold *almost* as much as an SUV, but at half the fuel cost. Seriously! A fuel-efficient four-cylinder car will usually drive 30-40 miles on a gallon of gas (MPG). An SUV, especially one from the early 2000s, is more likely to be in the 16-22mpg range.
 
@@ -285,7 +285,7 @@ VWs are referred to by generation: MkI, MkII, etc. (pronounced "mark one", "mark
 
 [JeepForum](http://www.jeepforum.com/) is chock-full of really well written pictoral guides and comprehensive documentation of common Jeep problems.
 
-Generations are referred to by the two letter code, usually ending in "J". ZJ is Bonnie's Grand Cherokee. There's a few others. Google it.
+Generations are referred to by the two letter code, usually ending in "J". ZJ is all Grand Cherokees from model year 1992 to 1998. There's a few others. Google it.
 
 #### Subaru
 
